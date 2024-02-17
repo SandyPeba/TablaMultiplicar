@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+      var n1 = parseInt(prompt("Ingresa el numero de la tabla que desea multiplicar"));
+      var n2 = parseInt(prompt("Ingresa el inicio de la tabla"));
+      var n3 = parseInt(prompt("Ingresa el final de la tabla"));
+      var resultado = '';
+      for(var i=n2; i<=n3; i++){
+        resultado +=n1+' x '+i+' = '+n1*i+'<br>'
+      }
+      document.getElementById('resultado').innerHTML=resultado
+    </script>
+</body>
+</html>
